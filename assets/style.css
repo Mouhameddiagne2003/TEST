@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #adcbd7;
+}
+.container {
+  width: 90%;
+  margin-top: 5%;
+  justify-content: center;
+}
+.contact-list {
+  max-height: 100vh;
+  width: 100%;
+  overflow: auto;
+}
+.main-content {
+  margin-top: 5%;
+  height: auto;
+  background-color: #406882;
+  justify-content: center;
+  align-items: center;
+}
+.titre-page {
+  text-align: center;
+  color: #9a55f3;
+}
+.option-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.tri-div,
+.recherche-div {
+  border: 1px solid #ddd;
+  padding: 10px;
+  flex: 1;
+  margin-right: 10px;
+}
+
+select,
+input {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-list thead th {
+  position: sticky;
+  top: 0;
+  background-color: #1a374d;
+  color: #e6e7e8;
+  font-size: 15px;
+}
+
+th,
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+  background-color: #adcbd7;
+}
+
+tr:hover td {
+  color: #9a55f3;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: #ddd;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  color: #1a374d;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+#editer {
+  background-color: #1a374d;
+  color: white;
+  padding: 1.5%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+#editer:hover {
+  background-color: white;
+  color: #1a374d;
+}
+.popup2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#editContactForm {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#editContactForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#editContactForm input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+#editContactForm button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#editContactForm button[type="submit"] {
+  background-color: #4caf50;
+}
+
+#editContactForm button[type="button"] {
+  background-color: red;
+  margin-left: 10px;
+}
+
+#editContactForm button:hover {
+  background-color: #45a049;
+}
